@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/*=================================================================
+# 共通パーツ
+================================================================== */
+/*=================================================================
+# ボタン
+================================================================== */
+.categories {
+  margin-top: 4px;
+  padding-bottom: 2px;
+  background-color: #4f4d4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.categories a {
+  font-size: 1.2em;
+  padding-top: 20px;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: bottom;
+}
+.categories a span {
+  text-decoration: underline;
+}
+.categories a:not(:last-child) {
+  margin-left: 20px;
+}
+.categories a:last-child {
+  margin-left: auto;
+  margin-right: 20px;
+  text-decoration: underline;
+}
+
+.item-main {
+  background-color: #eeeeee;
+  padding-top: 30px;
+  height: 100vh;
+}
+.item-main .item-table {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.3em;
+  background-color: #fff;
+  border-collapse: collapse;
+  letter-spacing: normal;
+}
+.item-main .item-table .item-tag {
+  background: #4f4d4d;
+}
+.item-main .item-table .item-tag th {
+  color: white;
+}
+.item-main .item-table th,
+.item-main .item-table td {
+  height: 50px;
+  border: 1px solid #636161;
+  vertical-align: middle;
+  text-align: center;
+}
+.item-main .item-table .item-id {
+  width: 5%;
+}
+.item-main .item-table .item-name {
+  text-align: left;
+  padding-left: 15px;
+}
+.item-main .item-table .item-price {
+  width: 20%;
+}
+.item-main .item-table .item-button {
+  width: 20%;
+  height: 100%;
+}
+.item-main .item-table .item-button form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 58px;
+  background: #4f4d4d;
+  border: 2px solid #fff;
+  color: #fff;
+  vertical-align: top;
+}

@@ -1,0 +1,23 @@
+@use "variable" as v; // as v をつけることで、v.$sub-color のように参照できる
+
+
+a{
+  text-decoration: none;
+  font-weight: 400;
+}
+
+
+body{
+  margin: 0px;
+  background-color: v.$sub-color;
+  letter-spacing: 0.1em;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+html,
+body {
+  height: 100%; // 🔹 親要素の高さを確保
+  margin: 0;
+  padding: 0;
+}

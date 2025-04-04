@@ -1,0 +1,96 @@
+@use "variable" as v; // as v をつけることで、v.$sub-color のように参照できる
+
+// カテゴリリンク
+.categories {
+  margin-top: 4px;
+  padding-bottom: 2px;
+  background-color: v.$main-color;
+  display: flex;
+
+  a {
+    font-size: 1.2em;
+    padding-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    vertical-align: bottom;
+
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  a:not(:last-child) {
+    margin-left: 20px;
+  }
+
+  a:last-child {
+    margin-left: auto;
+    margin-right: 20px;
+    text-decoration: underline;
+  }
+}
+
+// 商品一覧
+.item-main {
+  background-color: v.$sub-color;
+  padding-top: 30px;
+  height: 100vh;
+
+  .item-table {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.3em;
+    background-color: #fff;
+    border-collapse: collapse;
+    letter-spacing: normal;
+
+    // ヘッダー行（NO, 商品名, 価格）
+    .item-tag {
+      background: v.$main-color;
+
+      th {
+        color: v.$font-color;
+      }
+    }
+
+    th,
+    td {
+      height: 50px;
+      border: 1px solid v.$border-color;
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    // 商品ID列
+    .item-id {
+      width: 5%;
+    }
+
+    // 商品名列
+    .item-name {
+      text-align: left;
+      padding-left: 15px;
+    }
+
+    // 価格列
+    .item-price {
+      width: 20%;
+    }
+
+    // カートに追加ボタン列
+    .item-button {
+      width: 20%;
+      height: 100%;
+
+      form {
+        display: flex;
+        justify-content: center;
+        height: 58px;
+        background: v.$main-color;
+        border: 2px solid #fff;
+        color: #fff;
+        vertical-align: top;
+      }
+    }
+  }
+}

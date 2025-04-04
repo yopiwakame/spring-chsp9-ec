@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>サンプルショッピング</title>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/css/header.css">
+</head>
+<body>
+	<header>
+		<h1 ><a class="header-title" href="/items">サンプルショッピング</a></h1>
+
+		<div class="header-state">
+			<span th:text="'こんにちは、'+${@account.name}+'さん'"></span>
+			<a href="/logout">ログアウト</a>
+		</div>
+		</header>
+</body>
+</html>

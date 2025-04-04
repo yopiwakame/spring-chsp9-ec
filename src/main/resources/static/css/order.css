@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/*=================================================================
+# 共通パーツ
+================================================================== */
+/*=================================================================
+# ボタン
+================================================================== */
+.order-main {
+  background-color: #fff;
+  width: 80%;
+  height: 70vh;
+  margin: 40px auto;
+  border: 1px solid #636161;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.order-main .order-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.order-main .order-container h3 {
+  font-size: 2em;
+}
+.order-main .order-container :not(:first-child) {
+  margin: 20px 0 0 0;
+}
+.order-main .order-container p {
+  font-size: 1.3em;
+}

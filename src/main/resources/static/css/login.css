@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/*=================================================================
+# 共通パーツ
+================================================================== */
+/*=================================================================
+# ボタン
+================================================================== */
+.header-login {
+  background: #4f4d4d;
+  height: 100px;
+}
+
+main {
+  background-color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 1.6em;
+  padding-top: 70px;
+  letter-spacing: normal;
+}
+
+.login-form {
+  border: 2px solid #585858;
+  background-color: #fff;
+  width: 40%;
+  height: 350px;
+  margin: 70px auto 0 auto;
+  position: relative;
+}
+.login-form .error-message {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.2em;
+  text-align: center;
+  color: #ff0e0d;
+  display: block;
+}
+.login-form input {
+  width: 50%;
+  height: 40px;
+  border: 2px solid #585858;
+  margin: 70px auto 0 auto;
+  padding-left: 10px;
+  display: block;
+}
+.login-form button {
+  border: 1px solid #4f4d4d;
+  width: 30%;
+  font-size: 1.2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 40px;
+  color: #fff;
+  background-color: #4f4d4d;
+  text-align: center;
+  display: block;
+  margin: 40px auto;
+}

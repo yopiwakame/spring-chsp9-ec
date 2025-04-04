@@ -1,0 +1,26 @@
+<table border="1" class="cart-table">
+	<tr class="cart-tag">
+		<th class="cart-id">NO</th>
+		<th class="cart-name">商品名</th>
+		<th class="cart-price">値段</th>
+		<th class="cart-number">個数</th>
+		<th class="cart-subtotal">小計</th>
+		<th class="cart-delete"></th>
+	</tr>
+	<tr th:each="item:${@cart.items}">
+		<td th:text="${item.id}" class="item-id"></td>
+		<td th:text="${item.name}" class="item-name"></td>
+		<td th:text="${#numbers.formatInteger(item.price, 3, 'COMMA') + '円'}" class="item-price"></td>
+		<td th:text="${item.quantity}"></td>
+		<td th:text="${#numbers.formatInteger(item.price * item.quantity, 3, 'COMMA') + '円'}"></td>
+		<td class="cart-delete_button">
+			<form action="/cart/delete" method="post">
+				<input type="hidden" name="itemId" th:value="${item.id}">
+				<button>削除</button>
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="cart-total" colspan="7" th:text="'総計：' + ${#numbers.formatInteger(@cart.totalPrice, 3, 'COMMA')} + '円'"></td>
+	</tr>
+</table>

@@ -1,0 +1,41 @@
+@use "variable" as v; // as v をつけることで、v.$sub-color のように参照できる
+/*=================================================================
+# header
+================================================================== */
+
+header{
+  display: flex;
+  height:100px;
+  background-color: v.$main-color;
+  align-items: center;
+  padding:0  20px  0  50px;
+}
+
+.header-title{
+  font-size: 2.2em;
+
+  color: #ffff;
+  text-decoration: none;
+}
+
+
+.header-state{
+  margin: 25px 0 0 auto;
+  display: block;
+  margin-left: auto;
+  color: #ffff;
+
+  font-size: 1.2em;
+  span{
+  }
+
+  a{
+    margin: 15px 0 0 0;
+    text-align: right;
+    display: block;
+    color: #ffff;
+    text-decoration: underline;
+
+  }
+
+}

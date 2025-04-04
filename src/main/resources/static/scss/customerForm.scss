@@ -1,0 +1,81 @@
+@use "variable" as v; // v.$sub-color のように参照できる
+
+// カート注文全体の背景エリア
+.cart-order_main {
+  background-color: v.$sub-color;
+  padding-top: 40px;
+}
+
+// お客様情報セクション
+.customer-main {
+  background-color: v.$sub-color;
+  height: 100%;
+  padding-top: 40px;
+
+  .order-title,
+  .customer-title {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 10px;
+    font-size: v.$subtitle-size;
+  }
+
+  .customer-table {
+    width: 80%;
+    margin: 20px auto 0 auto;
+    background-color: #fff;
+    border-collapse: collapse;
+    letter-spacing: normal;
+    font-size: v.$main-size;
+
+    th {
+      width: 20%;
+      text-align: center;
+      background-color: v.$main-color;
+      color: v.$font-color;
+    }
+
+    th,
+    td {
+      height: 50px;
+      border: 1px solid v.$border-color;
+      vertical-align: middle;
+    }
+
+    tr {
+      td {
+        padding: 3px;
+
+        input {
+          width: 100%;
+          height: 100%;
+          padding-left: 10px;
+          border: 1px solid v.$border-color;
+          text-align: left;
+        }
+      }
+    }
+
+    //お客様名, お届け先名, お届け先住所, お届け先電話番号, お届け先メールアドレス）
+    .customer-name,
+    .order-name,
+    .order-address,
+    .order-tel,
+    .order-email {
+      padding-left: 15px;
+      text-align: left;
+    }
+
+    .customer-address,
+    .customer-tel,
+    .customer-email {
+      width: 10%;
+    }
+  }
+}
+
+// ボタン（確認・注文）
+.customer-button,
+.order-button {
+  @include v.button(v.$

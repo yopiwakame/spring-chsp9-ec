@@ -1,0 +1,101 @@
+@use "variable" as v; // v.$sub-color のように参照できる
+
+// カートページメインエリア
+.cart-main {
+  background-color: v.$sub-color;
+  height: 100vh;
+  padding-top: 40px;
+}
+
+// カートタイトル
+.cart-title {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 10px;
+  font-size: v.$subtitle-size;
+}
+
+// カートテーブル
+.cart-table {
+  width: 80%;
+  margin: 20px auto 0 auto;
+  background-color: #fff;
+  border-collapse: collapse;
+  letter-spacing: normal;
+  font-size: v.$main-size;
+  position: relative;
+
+  // ヘッダー行（NO, 商品名, 価格など）
+  .cart-tag {
+    background: v.$main-color;
+
+    th {
+      color: v.$font-color;
+    }
+  }
+
+  th,
+  td {
+    height: 50px;
+    border: 1px solid v.$border-color;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  // タグ行
+  .cart-tag_name {
+    text-align: center;
+  }
+
+  //id列
+  .cart-id {
+    width: 5%;
+  }
+  // 商品名列
+  .item-name {
+    padding-left: 15px;
+    text-align: left;
+  }
+
+  // 価格列
+  .cart-price,
+  .cart-number,
+  .cart-subtotal {
+    width: 12%;
+  }
+  //削除ボタン列
+  .cart-delete {
+    width: 20%;
+  }
+}
+
+// 削除ボタンのデザイン
+.cart-delete_button {
+  width: 20%;
+  height: 100%;
+
+  form {
+    display: flex;
+    justify-content: center;
+    height: 58px;
+    background: v.$main-color;
+    color: #fff;
+    border: 2px solid #fff;
+    vertical-align: top;
+  }
+}
+
+// 合計金額表示
+.cart-total {
+  text-align: right !important;
+  padding-right: 15px;
+}
+
+// カートに追加ボタン
+.cart-button {
+  button {
+    @include v.button(v.$main-color, #fff, 250px, 40px);
+    margin: 40px auto 0 auto;
+  }
+}

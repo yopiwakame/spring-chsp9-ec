@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/*=================================================================
+# 共通パーツ
+================================================================== */
+/*=================================================================
+# ボタン
+================================================================== */
+.cart-main {
+  background-color: #eeeeee;
+  height: 100vh;
+  padding-top: 40px;
+}
+
+.cart-title {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 10px;
+  font-size: 1.3em;
+}
+
+.cart-table {
+  width: 80%;
+  margin: 20px auto 0 auto;
+  background-color: #fff;
+  border-collapse: collapse;
+  letter-spacing: normal;
+  font-size: 1.2em;
+  position: relative;
+}
+.cart-table .cart-tag {
+  background: #4f4d4d;
+}
+.cart-table .cart-tag th {
+  color: white;
+}
+.cart-table th,
+.cart-table td {
+  height: 50px;
+  border: 1px solid #636161;
+  vertical-align: middle;
+  text-align: center;
+}
+.cart-table .cart-tag_name {
+  text-align: center;
+}
+.cart-table .cart-id {
+  width: 5%;
+}
+.cart-table .item-name {
+  padding-left: 15px;
+  text-align: left;
+}
+.cart-table .cart-price,
+.cart-table .cart-number,
+.cart-table .cart-subtotal {
+  width: 12%;
+}
+.cart-table .cart-delete {
+  width: 20%;
+}
+
+.cart-delete_button {
+  width: 20%;
+  height: 100%;
+}
+.cart-delete_button form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 58px;
+  background: #4f4d4d;
+  color: #fff;
+  border: 2px solid #fff;
+  vertical-align: top;
+}
+
+.cart-total {
+  text-align: right !important;
+  padding-right: 15px;
+}
+
+.cart-button button {
+  border: 1px solid #4f4d4d;
+  width: 250px;
+  font-size: 1.2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 40px;
+  color: #fff;
+  background-color: #4f4d4d;
+  text-align: center;
+  display: block;
+  margin: 40px auto 0 auto;
+}

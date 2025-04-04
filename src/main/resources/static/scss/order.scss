@@ -1,0 +1,36 @@
+@use "variable" as v; // v.$sub-color のように参照できる
+
+.order-main {
+  background-color: #fff;
+  width: 80%;
+  height: 70vh;
+  margin: 40px auto;
+  border: 1px solid v.$border-color;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .order-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+
+    h3 {
+      font-size: 2em;
+    }
+    :not(:first-child) {
+      margin: 20px 0 0 0;
+    }
+
+    p {
+      font-size: 1.3em;
+    }
+  }
+}

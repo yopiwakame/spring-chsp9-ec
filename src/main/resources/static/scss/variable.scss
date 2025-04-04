@@ -1,0 +1,30 @@
+/*=================================================================
+# 共通パーツ
+================================================================== */
+
+// カラー
+$main-color: #4f4d4d;
+$sub-color:  #eeeeee;
+$font-color:#ffff;
+$border-color:#636161;
+//フォントサイズ
+$main-size: 1.2em;
+$subtitle-size: 1.3em;
+
+
+/*=================================================================
+# ボタン
+================================================================== */
+@mixin button($color: $main-color, $button-font: #fff, $width: 300px, $height: 300px) {
+  border: 1px solid $color;
+  width: $width;
+  font-size: $main-size;
+  box-sizing: border-box;
+  height: $height;
+  color: $button-font;
+  background-color: $color;
+  text-align: center;
+  display: block;
+}
+
+// 呼び出す時は、@include button($main-color,#fff,400px,300px);で引数を入力

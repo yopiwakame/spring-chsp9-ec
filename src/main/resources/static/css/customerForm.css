@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/*=================================================================
+# 共通パーツ
+================================================================== */
+/*=================================================================
+# ボタン
+================================================================== */
+.cart-order_main {
+  background-color: #eeeeee;
+  padding: 40px 0 0 0;
+}
+
+.customer-main {
+  background-color: #eeeeee;
+  height: 100%;
+  padding: 40px 0 0 0;
+}
+.customer-main .order-title {
+  display: block;
+  width: 80%;
+  margin: 0 auto 0 auto;
+  font-size: 1.3em;
+  padding: 0 0 0 10px;
+}
+.customer-main .customer-title {
+  display: block;
+  width: 80%;
+  margin: 0 auto 0 auto;
+  font-size: 1.3em;
+  padding: 0 0 0 10px;
+}
+.customer-main .customer-table {
+  font-size: #5f5d5d;
+  width: 80%;
+  margin: 20px auto 0 auto;
+  background-color: #fff;
+  border-collapse: collapse;
+  letter-spacing: normal;
+}
+.customer-main .customer-table th {
+  color: white;
+  background-color: #5f5d5d;
+  width: 20%;
+  text-align: center;
+}
+.customer-main .customer-table tr td {
+  padding: 3px;
+}
+.customer-main .customer-table tr td input {
+  border: 1px solid #545151;
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  text-align: left;
+}
+.customer-main .customer-table th,
+.customer-main .customer-table td {
+  vertical-align: middle;
+  border: 1px solid #545151;
+  height: 50px;
+}
+.customer-main .customer-table .customer-name {
+  padding: 0 0 0 15px;
+  text-align: left;
+}
+.customer-main .customer-table .customer-address {
+  width: 10%;
+}
+.customer-main .customer-table .customer-tel {
+  width: 10%;
+}
+.customer-main .customer-table .customer-email {
+  width: 10%;
+}
+.customer-main .customer-table .order-name {
+  padding: 0 0 0 15px;
+  text-align: left;
+}
+.customer-main .customer-table .order-address {
+  padding: 0 0 0 15px;
+  text-align: left;
+}
+.customer-main .customer-table .order-tel {
+  padding: 0 0 0 15px;
+  text-align: left;
+}
+.customer-main .customer-table .order-email {
+  padding: 0 0 0 15px;
+  text-align: left;
+}
+
+.customer-button {
+  border: 1px solid #5f5d5d;
+  width: 250px;
+  font-size: 1.2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 40px;
+  color: #fff;
+  background-color: #5f5d5d;
+  text-align: center;
+  display: block;
+  margin: 40px auto 0 auto;
+}
+
+.order-button {
+  border: 1px solid #5f5d5d;
+  width: 250px;
+  font-size: 1.2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 40px;
+  color: #fff;
+  background-color: #5f5d5d;
+  text-align: center;
+  display: block;
+  margin: 40px auto 0 auto;
+}
